@@ -11,3 +11,8 @@ docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=<Password here> -p 1433:1433 -d micro
 docker pull welkineins/ubuntu-xfce-vnc-desktop
 docker run -i -t -p 5900:5900 welkineins/ubuntu-xfce-vnc-desktop
 ```
+
+### Oracle Express Edition 11g on Ubuntu
+```
+docker pull wnameless/oracle-xe-11g
+docker run -d -p 1521:1521 wnameless/oracle-xe-11g
