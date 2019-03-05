@@ -12,7 +12,7 @@ docker pull welkineins/ubuntu-xfce-vnc-desktop
 docker run -i -t -p 5900:5900 welkineins/ubuntu-xfce-vnc-desktop
 ```
 
-### [Oracle Express Edition 11g on Ubuntu](https://github.com/wnameless/docker-oracle-xe-11g)
+### [Oracle Express Edition 11g on Ubuntu](https://github.com/wnameless/docker-oracle-xe-11g), removed from DockerHub
 ```
 docker pull wnameless/oracle-xe-11g
 docker run -d -p 1521:1521 wnameless/oracle-xe-11g
