@@ -23,3 +23,9 @@ sid: xe
 username: system
 password: oracle
 ```
+
+
+
+### Common Dockerfile commands
+`RUN` commands triggers while building the docker image
+`CMD` commands triggers while launching the created docker image
