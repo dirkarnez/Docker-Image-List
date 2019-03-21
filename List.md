@@ -24,6 +24,11 @@ username: system
 password: oracle
 ```
 
+### [Fine Report](https://github.com/juglans/finereport)
+```
+docker pull juglans/finereport
+docker run -d -p 8080:8080 juglans/finereport
+```
 
 
 ### Common Dockerfile commands
