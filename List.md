@@ -24,7 +24,8 @@ username: system
 password: oracle
 ```
 
-### [Oracle Express Edition 11g on Ubuntu]
+### Oracle Express Edition 11g on Ubuntu
+```
 docker pull epiclabs/docker-oracle-xe-11g
 docker run -d -p 1521:1521 epiclabs/docker-oracle-xe-11g
 
@@ -40,7 +41,6 @@ password: oracle
 docker pull juglans/finereport
 docker run -d -p 8080:8080 juglans/finereport
 ```
-
 
 ### Common Dockerfile commands
 * `RUN` commands triggers while building the docker image
