@@ -24,6 +24,17 @@ username: system
 password: oracle
 ```
 
+### [Oracle Express Edition 11g on Ubuntu]
+docker pull epiclabs/docker-oracle-xe-11g
+docker run -d -p 1521:1521 epiclabs/docker-oracle-xe-11g
+
+hostname: localhost
+port: 1521
+sid: xe
+username: system
+password: oracle
+```
+
 ### [Fine Report](https://github.com/juglans/finereport)
 ```
 docker pull juglans/finereport
