@@ -35,6 +35,18 @@ sid: xe
 username: system
 password: oracle
 ```
+### [Oracle 12c Standard Edition](https://hub.docker.com/r/laboratoriobridge/oracle-12c)
+```
+docker pull laboratoriobridge/oracle-12c
+docker run -d -p 8888:8080 -p 1521:1521 laboratoriobridge/oracle-12c
+
+hostname: localhost
+port: 1521
+sid: xe
+service name: xe
+username: system / sys (SYSDBA)
+password: oracle
+```
 
 ### [Fine Report](https://github.com/juglans/finereport)
 ```
