@@ -54,6 +54,11 @@ docker pull juglans/finereport
 docker run -d -p 8080:8080 juglans/finereport
 ```
 
+### MariaDB
+```
+docker pull mariadb
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mariadb
+ ```
 ### Common Dockerfile commands
 * `RUN` commands triggers while building the docker image
 * `CMD` commands triggers while launching the created docker image
