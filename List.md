@@ -11,6 +11,12 @@ docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=<Password here> -p 1433:1433 -d micro
 docker pull welkineins/ubuntu-xfce-vnc-desktop
 docker run -i -t -p 5900:5900 welkineins/ubuntu-xfce-vnc-desktop
 ```
+### [Web-VNC-ready Ubuntu](https://github.com/fcwu/docker-ubuntu-vnc-desktop)
+```
+docker pull dorowu/ubuntu-desktop-lxde-vnc
+docker run -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
+Browse http://127.0.0.1:6080/
+```
 
 ### [Oracle Express Edition 11g on Ubuntu](https://github.com/wnameless/docker-oracle-xe-11g), removed from DockerHub
 ```
