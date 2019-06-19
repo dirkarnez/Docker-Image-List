@@ -18,6 +18,15 @@ docker run -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
 Browse http://127.0.0.1:6080/
 ```
 
+### Enable VPN
+````
+docker run --cap-add=NET_ADMIN -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
+
+mkdir /dev/net -pv
+mknod /dev/net/tun c 10 200
+chmod 666 /dev/net/tun
+```
+
 ### [Oracle Express Edition 11g on Ubuntu](https://github.com/wnameless/docker-oracle-xe-11g), removed from DockerHub
 ```
 docker pull wnameless/oracle-xe-11g
