@@ -25,7 +25,14 @@ docker run --cap-add=NET_ADMIN -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-des
 mkdir /dev/net -pv
 mknod /dev/net/tun c 10 200
 chmod 666 /dev/net/tun
-```
+
+Dockerfile
+FROM dorowu/ubuntu-desktop-lxde-vnc
+
+RUN mkdir /dev/net -pv && \
+ mknod /dev/net/tun c 10 200 && \
+ chmod 600 /dev/net/tun
+````
 
 ### [Oracle Express Edition 11g on Ubuntu](https://github.com/wnameless/docker-oracle-xe-11g), removed from DockerHub
 ```
