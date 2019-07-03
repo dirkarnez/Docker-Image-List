@@ -81,6 +81,10 @@ docker run -d -p 8080:8080 juglans/finereport
 docker pull mariadb
 docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mariadb
  ```
+ 
+### Docker tricks
+- Set Timezone `RUN echo "Asia/Shanghai" > /etc/timezone;` 
+- Set hosts file, must be in one line `CMD echo "ip hostname" >> /etc/hosts && ./you-application`
 ### Common Dockerfile commands
 * `RUN` commands triggers while building the docker image
 * `CMD` commands triggers while launching the created docker image
