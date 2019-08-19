@@ -81,7 +81,13 @@ docker run -d -p 8080:8080 juglans/finereport
 docker pull mariadb
 docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mariadb
 ```
- 
+
+### [Node-RED](https://nodered.org/)
+```
+docker pull nodered/node-red-docker
+docker run -it -p 1880:1880 nodered/node-red-docker
+````
+
 ### Docker tricks
 - Set Timezone `RUN echo "Asia/Shanghai" > /etc/timezone;` 
 - Set hosts file, must be in one line `CMD echo "ip hostname" >> /etc/hosts && ./you-application`
