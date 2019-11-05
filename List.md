@@ -96,3 +96,6 @@ docker run -it -p 1880:1880 nodered/node-red-docker
 ### Common Dockerfile commands
 * `RUN` commands triggers while building the docker image
 * `CMD` commands triggers while launching the created docker image
+
+### Common Docker CLI commands
+ - `docker system prune -a --volumes` delete everything
