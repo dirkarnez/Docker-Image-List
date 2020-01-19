@@ -88,6 +88,11 @@ docker pull nodered/node-red-docker
 docker run -it -p 1880:1880 nodered/node-red-docker
 ````
 
+### Jupyter Notebook
+```
+docker run --rm -it -p 8888:8888 -v "%~dp0:/home/jovyan/my-notebooks" jupyter/base-notebook:latest
+```
+
 ### Docker tricks
 - Set Timezone `RUN echo "Asia/Shanghai" > /etc/timezone;` 
 - Set hosts file, must be in one line `CMD echo "ip hostname" >> /etc/hosts && ./you-application`
