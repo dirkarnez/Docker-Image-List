@@ -104,7 +104,8 @@ docker run -it -p 1880:1880 nodered/node-red-docker
  
 ### Common Dockerfile snippets
 ```
-RUN apt-get update \&& apt-get -y --no-install-recommends install \
+RUN apt-get update -y \ 
+&& apt-get -y --no-install-recommends install \
    build-essential \
    libgomp1 \
 && apt-get clean \
