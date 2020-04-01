@@ -101,3 +101,12 @@ docker run -it -p 1880:1880 nodered/node-red-docker
 
 ### Common Docker CLI commands
  - `docker system prune -a --volumes` delete everything
+ 
+### Common Dockerfile snippets
+```
+RUN apt-get update \&& apt-get -y --no-install-recommends install \
+   build-essential \
+   libgomp1 \
+&& apt-get clean \
+&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+```
