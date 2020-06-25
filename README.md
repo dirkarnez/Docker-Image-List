@@ -90,6 +90,8 @@ docker run -it -p 1880:1880 nodered/node-red-docker
 
 ### [Jupyter Notebook](https://github.com/dirkarnez/docker-jupyter-notebook)
 
+### [Apache PHP](https://github.com/dirkarnez/docker-php-apache)
+
 ### Docker tricks
 - Set Timezone `RUN echo "Asia/Shanghai" > /etc/timezone;` 
 - Set hosts file, must be in one line `CMD echo "ip hostname" >> /etc/hosts && ./you-application`
