@@ -1,4 +1,8 @@
-## Docker Image List
+Docker Image List
+=================
+
+### Just Linux (on top of golang image)
+- `docker run --rm -it --workdir="/root/" -p 8888:8888 -v "%~dp0:/root/" golang:latest bash`
 
 ### Mac OSX
 - [sickcodes/Docker-OSX: Mac in Docker! Run near native OSX-KVM in Docker! X11 Forwarding!](https://github.com/sickcodes/Docker-OSX)
