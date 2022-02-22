@@ -109,6 +109,10 @@ docker run -it -p 1880:1880 nodered/node-red-docker
 
 ### Cross compilation
 - [dockcross/dockcross: Cross compiling toolchains in Docker images](https://github.com/dockcross/dockcross)
+
+### torrent
+- [crazy-max/docker-qbittorrent: qBittorrent Docker image based on Alpine Linux](https://github.com/crazy-max/docker-qbittorrent)
+
 ### Docker tricks
 - Set Timezone `RUN echo "Asia/Shanghai" > /etc/timezone;` 
 - Set hosts file, must be in one line `CMD echo "ip hostname" >> /etc/hosts && ./you-application`
