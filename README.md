@@ -1,6 +1,17 @@
 Docker Image List
 =================
-
+### Build
+- `Dockerfile`
+  - ```bat
+    docker build -t rsta2-circle .
+    docker run --rm -it -v "%cd%/export:/home/ubuntu/circle/export" rsta2-circle
+    pause
+    ```
+- `docker-compose.dev.yml`
+  - ```bat
+    docker-compose --file docker-compose.dev.yml up --build && docker-compose --file docker-compose.dev.yml down
+    pause
+    ```
 ### Just Linux (on top of golang image)
 - ```
   docker run --rm -it --workdir="/root/" -p 8888:8888 -v "%~dp0:/root/" golang:latest bash
