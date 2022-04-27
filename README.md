@@ -99,7 +99,7 @@ docker run -d -p 8080:8080 juglans/finereport
 ### MariaDB
 ```
 docker pull mariadb
-docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mariadb
+docker run --rm -it -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=default mariadb
 ```
 
 ### [Node-RED](https://nodered.org/)
