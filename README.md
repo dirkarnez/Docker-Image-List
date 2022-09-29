@@ -120,6 +120,8 @@ docker run -it -p 1880:1880 nodered/node-red-docker
 
 ### Cross compilation
 - [dockcross/dockcross: Cross compiling toolchains in Docker images](https://github.com/dockcross/dockcross)
+- [VideoLAN / docker-images-aarch64 · GitLab](https://code.videolan.org/videolan/docker-images-aarch64)
+- [VideoLAN / docker-images-armv7 · GitLab](https://code.videolan.org/videolan/docker-images-armv7)
 
 ### torrent
 - [crazy-max/docker-qbittorrent: qBittorrent Docker image based on Alpine Linux](https://github.com/crazy-max/docker-qbittorrent)
