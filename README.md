@@ -139,11 +139,25 @@ docker run -it -p 1880:1880 nodered/node-red-docker
  - `docker system prune -a --volumes` delete everything
  
 ### Common Dockerfile snippets
-```
+```Dockerfile
 RUN apt-get update -y \ 
 && apt-get -y --no-install-recommends install \
    build-essential \
    libgomp1 \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+```
+```Dockerfile
+# USERID should be same as the current user.
+ARG USERID
+ARG USERNAME=ci
+
+ENV DISPLAY=":0"
+
+RUN useradd --create-home --no-user-group -u $USERID $USERNAME -s /bin/bash && adduser $USERNAME sudo
+
+RUN apt-get update && \
+	apt-get install -y --no-install-recommends ansible sudo && \
+	rm -rf /var/lib/apt/lists/* && \
+    apt-get clean 
 ```
