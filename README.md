@@ -126,6 +126,9 @@ docker run -it -p 1880:1880 nodered/node-red-docker
 ### torrent
 - [crazy-max/docker-qbittorrent: qBittorrent Docker image based on Alpine Linux](https://github.com/crazy-max/docker-qbittorrent)
 
+### Awesome
+- [dev-cafe/docker-images: Docker images for fun and for profit](https://github.com/dev-cafe/docker-images)
+
 ### Docker tricks
 - Set Timezone `RUN echo "Asia/Shanghai" > /etc/timezone;` 
 - Set hosts file, must be in one line `CMD echo "ip hostname" >> /etc/hosts && ./you-application`
