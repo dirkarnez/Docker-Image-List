@@ -137,7 +137,17 @@ docker run -it -p 1880:1880 nodered/node-red-docker
 ### Common Dockerfile commands
 * `RUN` commands triggers while building the docker image
 * `CMD` commands triggers while launching the created docker image
+- sudo
+	- ```Dockerfile
+		# Create ubuntu user with sudo privileges
+		RUN useradd -ms /bin/bash ubuntu && \
+		usermod -aG sudo ubuntu
+		# New added for disable sudo password
+		RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
+		# Set as default user
+		USER ubuntu
+		```
 ### Common Docker CLI commands
  - `docker system prune -a --volumes` delete everything
  
