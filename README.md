@@ -7,6 +7,10 @@ Docker Image List
     docker run --rm -it -v "%cd%/export:/home/ubuntu/circle/export" rsta2-circle
     pause
     ```
+- platform
+  - ```bat
+    docker build --platform=linux/amd64 -t mydebian .
+    ```
 - `docker-compose.dev.yml`
   - ```bat
     docker-compose --file docker-compose.dev.yml up --build && docker-compose --file docker-compose.dev.yml down
