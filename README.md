@@ -183,3 +183,7 @@ RUN apt-get update && \
 	rm -rf /var/lib/apt/lists/* && \
     apt-get clean 
 ```
+
+### Reference
+- https://github.com/arville27/ppe/blob/master/Dockerfile
+- https://github.com/arville27/ppe/blob/master/docker-compose.yml
