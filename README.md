@@ -186,4 +186,5 @@ RUN apt-get update && \
 
 ### Reference
 - https://github.com/arville27/ppe/blob/master/Dockerfile
+- https://github.com/qbittorrent/docker-qbittorrent-nox
 - https://github.com/arville27/ppe/blob/master/docker-compose.yml
