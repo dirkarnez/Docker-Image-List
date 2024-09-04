@@ -30,6 +30,15 @@ Docker Image List
 ### Mac OSX
 - [sickcodes/Docker-OSX: Mac in Docker! Run near native OSX-KVM in Docker! X11 Forwarding!](https://github.com/sickcodes/Docker-OSX)
 
+### OpenSSL
+- ```Dockerfile
+  from alpine/openssl as ssl
+  run mkdir /ssl && openssl req -x509 -newkey rsa:2048 -sha256 -days 36500 -nodes -keyout /ssl/key -out /ssl/cert -subj '/CN=hubs'
+  ```
+- ```Dockerfile
+  from node:lts as build
+  run mkdir certs && openssl req -x509 -newkey rsa:4096 -sha256 -days 36500 -nodes -keyout certs/key.pem -out certs/cert.pem -subj '/CN=dialog'
+  ```
 ### MS SQL Server on Linux
 ```
 docker run --rm -it -e ACCEPT_EULA=Y -e SA_PASSWORD=P@ssw0rd -p 1433:1433 mcr.microsoft.com/mssql/server:2019-latest
