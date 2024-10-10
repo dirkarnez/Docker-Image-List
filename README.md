@@ -136,6 +136,15 @@ docker run -it -p 1880:1880 nodered/node-red-docker
 ### Machine Learning
 - [ContinuumIO/docker-images: Repository of Docker images created by Continuum Analytics](https://github.com/ContinuumIO/docker-images)
 
+### OSes
+- [Dockur](https://github.com/dockur)
+	- [dockur/windows: Windows inside a Docker container.](https://github.com/dockur/windows)
+	- [dockur/windows-arm: Windows for ARM in a Docker container.](https://github.com/dockur/windows-arm)
+	- [dockur/macos: OSX (macOS) inside a Docker container.](https://github.com/dockur/macos)
+	- [dockur/samba: Samba SMB server in a Docker container.](https://github.com/dockur/samba)
+	- [dockur/chrony: 🕒 chronyd NTP server in a Docker container.](https://github.com/dockur/chrony)
+	- [dockur/umbrel: umbrelOS inside a Docker container.](https://github.com/dockur/umbrel)
+
 ### Cross compilation
 - [dockcross/dockcross: Cross compiling toolchains in Docker images](https://github.com/dockcross/dockcross)
 - [VideoLAN / docker-images-aarch64 · GitLab](https://code.videolan.org/videolan/docker-images-aarch64)
