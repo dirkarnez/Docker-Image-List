@@ -145,6 +145,9 @@ docker run -it -p 1880:1880 nodered/node-red-docker
 	- [dockur/chrony: 🕒 chronyd NTP server in a Docker container.](https://github.com/dockur/chrony)
 	- [dockur/umbrel: umbrelOS inside a Docker container.](https://github.com/dockur/umbrel)
 
+### Healthcheck
+- `HEALTHCHECK CMD wget --no-check-certificate --no-verbose --tries=1 --spider https://localhost:4000/stream-offline.png`
+
 ### Cross compilation
 - [dockcross/dockcross: Cross compiling toolchains in Docker images](https://github.com/dockcross/dockcross)
 - [VideoLAN / docker-images-aarch64 · GitLab](https://code.videolan.org/videolan/docker-images-aarch64)
