@@ -27,6 +27,9 @@ Docker Image List
   docker run --rm -it ubuntu:latest bash
   ```
 
+### Virtual framebuffer
+- [bengreenier/docker-xvfb: Dockerfiles for running headless x11 apps 📦🤕✨](https://github.com/bengreenier/docker-xvfb)
+
 ### Mac OSX
 - [sickcodes/Docker-OSX: Mac in Docker! Run near native OSX-KVM in Docker! X11 Forwarding!](https://github.com/sickcodes/Docker-OSX)
 
