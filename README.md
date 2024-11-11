@@ -17,6 +17,14 @@ Docker Image List
     pause
     ```
 - [Day4：用簡單的例子來說明如何使用 Docker 指令 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10190921)
+
+### Windows on qemu
+- [dockur/windows: Windows inside a Docker container.](https://github.com/dockur/windows)
+	- `docker run -it --rm -p 8006:8006  --cap-add NET_ADMIN --stop-timeout 120 dockurr/windows`
+
+### macOS
+- [dockur/macos: OSX (macOS) inside a Docker container.](https://github.com/dockur/macos)
+
 ### Just Linux
 - on top of golang image
   ```
