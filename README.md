@@ -1,5 +1,8 @@
 Docker Image List
 =================
+### Notes
+- for cicd, remove `-it` because it is not interactive
+
 ### Build
 - `Dockerfile`
   - ```bat
@@ -53,6 +56,11 @@ Docker Image List
 ### MS SQL Server on Linux
 ```
 docker run --rm -it -e ACCEPT_EULA=Y -e SA_PASSWORD=P@ssw0rd -p 1433:1433 mcr.microsoft.com/mssql/server:2019-latest
+```
+
+### KiCad
+```
+docker run --rm -v $HOME/src/:/local/src kicad/kicad:8.0.6 kicad-cli version
 ```
 
 ### VNC-ready Ubuntu
