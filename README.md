@@ -8,6 +8,7 @@ Docker Image List
   - ```bat
     docker build -t rsta2-circle .
     docker run --rm -it -v "%cd%/export:/home/ubuntu/circle/export" rsta2-circle
+    # full docker run -it --rm -u $(id -u):$(id -g) --volume "$(CWD)":"$(CWD)" --workdir "$(CWD)" $(KICAD_CLI_IMAGE) kicad-cli
     pause
     ```
 - platform
