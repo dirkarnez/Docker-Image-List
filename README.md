@@ -5,6 +5,9 @@ Docker Image List
 - ```bash
   #!/bin/bash
   # check if current script can access stdin file descriptor, if yes, enable iteractive mode in Docker
+  # [Bash Redirection Fun With Descriptors | by Cindy Sridharan | Medium](https://copyconstruct.medium.com/bash-redirection-fun-with-descriptors-e799ec5a3c16)
+  # [shell - What is "-t" in a bash script? - Stack Overflow](https://stackoverflow.com/questions/58086239/what-is-t-in-a-bash-script)
+  # [bash - What does [ -t 1 ] check? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/389495/what-does-t-1-check)
   if  [ -t 0 ]; then
   	DOCKER_DEFAULT_OPTIONS="-it --rm"
   else
