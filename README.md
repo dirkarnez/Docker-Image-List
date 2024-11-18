@@ -2,7 +2,15 @@ Docker Image List
 =================
 ### Notes
 - for cicd, remove `-it` because it is not interactive
-
+- ```bash
+  #!/bin/bash
+  # check if current script can access stdin file descriptor, if yes, enable iteractive mode in Docker
+  if  [ -t 0 ]; then
+  	DOCKER_DEFAULT_OPTIONS="-it --rm"
+  else
+  	DOCKER_DEFAULT_OPTIONS="--rm"
+  fi
+  ```
 ### Build
 - `Dockerfile`
   - ```bat
