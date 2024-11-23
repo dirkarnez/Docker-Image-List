@@ -14,6 +14,7 @@ Docker Image List
   	DOCKER_DEFAULT_OPTIONS="--rm"
   fi
   ```
+
 ### Build
 - `Dockerfile`
   - ```bat
@@ -33,6 +34,16 @@ Docker Image List
     ```
 - [Day4：用簡單的例子來說明如何使用 Docker 指令 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10190921)
 
+### Docker as command
+- ```bash
+  docker run --rm --name "${CONTAINER_NAME}" --mount type=bind,src=${PWD},target=/build -it "${IMAGE_NAME}" ./build.sh "$@"
+  ```
+### Docker waiting
+- ```Dockerfile
+  # container just waits, by default, actual builds can be done with `docker exec`
+  CMD /bin/bash -c 'for ((i = 0; ; i++)); do sleep 100; done'
+  ```
+  
 ### Windows on qemu
 - [dockur/windows: Windows inside a Docker container.](https://github.com/dockur/windows)
 	- `docker run -it --rm -p 8006:8006  --cap-add NET_ADMIN --stop-timeout 120 dockurr/windows`
