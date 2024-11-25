@@ -223,6 +223,7 @@ docker run -it -p 1880:1880 nodered/node-red-docker
 		```
 ### Common Docker CLI commands
  - `docker system prune -a --volumes` delete everything
+ - [Docker常用操作集合_docker-entrypoint-initdb.d能挂载configmap定义的shell脚本吗-CSDN博客](https://blog.csdn.net/weixin_64632836/article/details/141871750)
  
 ### Common Dockerfile snippets
 ```Dockerfile
