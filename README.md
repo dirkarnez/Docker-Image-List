@@ -67,6 +67,12 @@ Docker Image List
 ### Mac OSX
 - [sickcodes/Docker-OSX: Mac in Docker! Run near native OSX-KVM in Docker! X11 Forwarding!](https://github.com/sickcodes/Docker-OSX)
 
+### OCS Inventory
+- [OCS Inventory Docker image - OCS Inventory Documentation](https://wiki.ocsinventory-ng.org/13.Docker-documentation/Using-the-docker-image/)
+	- ```bash
+	  docker run -p 9880:80 -p 9443:443 --name my-ocs -e OCS_DB_NAME=DB_NAME -e OCS_DB_SERVER=DB_HOST -e OCS_DB_PORT=DB_PORT -e OCS_DB_USER=DB_USER -e OCS_DB_PASS=DB_PASS -itd ocsinventory/ocsinventory-docker-image:latest
+	  ```
+  
 ### OpenSSL
 - ```Dockerfile
   from alpine/openssl as ssl
