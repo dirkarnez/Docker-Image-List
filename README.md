@@ -97,7 +97,7 @@ docker run --rm -v $HOME/src/:/local/src kicad/kicad:8.0.6 kicad-cli version
 docker pull welkineins/ubuntu-xfce-vnc-desktop
 docker run -i -t -p 5900:5900 welkineins/ubuntu-xfce-vnc-desktop
 ```
-### [Web-VNC-ready Ubuntu](https://github.com/fcwu/docker-ubuntu-vnc-desktop)
+### [Web-VNC-ready Ubuntu](https://github.com/fcwu/docker-ubuntu-vnc-desktop) / [dirkarnez/ubuntu-desktop-lxde-vnc-action](https://github.com/dirkarnez/ubuntu-desktop-lxde-vnc-action)
 ```
 docker pull dorowu/ubuntu-desktop-lxde-vnc
 docker run -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
