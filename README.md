@@ -260,3 +260,6 @@ RUN apt-get update && \
 - https://github.com/qbittorrent/docker-qbittorrent-nox
 - https://github.com/arville27/ppe/blob/master/docker-compose.yml
 - [bep/dockerfiles](https://github.com/bep/dockerfiles)
+
+
+<!-- Security scan triggered at 2026-09-15 09:40:21 -->
